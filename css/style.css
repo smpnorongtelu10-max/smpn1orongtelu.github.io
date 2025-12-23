@@ -1,3 +1,45 @@
-.logo {
-  max-height: 70px;
+:root {
+  --primary-blue: #1e3a8a;
+  --secondary-blue: #1e40af;
+  --accent-yellow: #facc15;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Hero Image Styling */
+.hero-gradient {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Navigation Dropdown Logic */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-blue);
+  border-radius: 4px;
 }
