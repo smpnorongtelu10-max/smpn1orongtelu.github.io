@@ -1,3 +1,4 @@
+console.log("JS AKTIF");
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.getElementById("menuBtn");
   const closeBtn = document.getElementById("closeBtn");
@@ -23,3 +24,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
